@@ -1,4 +1,4 @@
-# <img src="https://github.com/Swedlund/Balboa-Spa-App-for-Homey/blob/main/assets/icon.png?raw=true" alt="Icon"/> Homey Balboa Spa Integration
+# <img src="https://github.com/Swedlund/Balboa-Spa-App-for-Homey/blob/main/assets/icon.png?raw=true" alt="Icon"/> Balboa Spa App for Homey
 
 Control your Balboa Spa hot tub from Homey using the 50350 WiFi module – no cloud, no hassle.  
 This Homey app enables seamless local integration with Balboa Spas via WebSocket, automatically discovering spa modules on your local network when adding a device.
