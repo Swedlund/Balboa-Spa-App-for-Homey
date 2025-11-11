@@ -1,0 +1,1585 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.balboa.spacontrol",
+  "version": "1.1.0",
+  "brandColor": "#00719c",
+  "compatibility": ">=12.2.0",
+  "sdk": 3,
+  "homeyCommunityTopicId": 133868,
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "ErikSwedlund"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Balboa-Spa"
+  },
+  "description": {
+    "en": "Monitor and control your Balboa-Spa Hottub. Requires the Balboa WiFi module with local connection and no cloud dependency."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Erik Swedlund",
+    "email": "erik.swedlund@outlook.com"
+  },
+  "api": {
+    "discoverDevices": {
+      "method": "GET",
+      "path": "/discover"
+    },
+    "getLogToTimeline": {
+      "method": "GET",
+      "path": "/settings/logToTimeline"
+    },
+    "setLogToTimeline": {
+      "method": "PUT",
+      "path": "/settings/logToTimeline"
+    }
+  },
+  "settings": [
+    {
+      "type": "label",
+      "id": "balboa-spa-settings",
+      "title": {
+        "en": "Balboa-Spa Settings"
+      },
+      "label": {
+        "en": "Click the button below to discover Balboa-Spa devices."
+      }
+    }
+  ],
+  "drivers": [
+    {
+      "name": {
+        "en": "50350 WiFi Module"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "alarm_connectivity",
+        "alarm_cold",
+        "heatingTime",
+        "heating",
+        "modeHeating",
+        "modeRunning",
+        "modePriming",
+        "circPump",
+        "blower",
+        "modeFilter",
+        "reminderType",
+        "pump1",
+        "pump2",
+        "pump3",
+        "pump4",
+        "pump5",
+        "pump6",
+        "target_temperature_level",
+        "measure_temperature",
+        "target_temperature",
+        "tempRange",
+        "tempScale",
+        "light1",
+        "light2",
+        "tempSensorA",
+        "tempSensorB",
+        "modeStandby",
+        "time",
+        "timeScale"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/balboa-spa/assets/images/small.png",
+        "large": "/drivers/balboa-spa/assets/images/large.png",
+        "xlarge": "/drivers/balboa-spa/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "next": "done"
+          }
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "id": "balboa-spa",
+      "settings": [
+        {
+          "id": "ip_address",
+          "type": "label",
+          "label": {
+            "en": "IP Address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse",
+            "fr": "Adresse IP",
+            "it": "Indirizzo IP",
+            "sv": "IP-adress",
+            "no": "IP-adresse",
+            "es": "Dirección IP",
+            "da": "IP-adresse"
+          },
+          "value": "0.0.0.0",
+          "hint": {
+            "en": "The IP address of your spa",
+            "nl": "Het IP-adres van uw spa",
+            "de": "Die IP-Adresse Ihres Spas",
+            "fr": "L'adresse IP de votre spa",
+            "it": "L'indirizzo IP della tua spa",
+            "sv": "IP-adressen till ditt spa",
+            "no": "IP-adressen til spaet ditt",
+            "es": "La dirección IP de su spa",
+            "da": "IP-adressen til din spa"
+          }
+        },
+        {
+          "id": "mac_address",
+          "type": "label",
+          "label": {
+            "en": "MAC Address",
+            "nl": "MAC-adres",
+            "de": "MAC-Adresse",
+            "fr": "Adresse MAC",
+            "it": "Indirizzo MAC",
+            "sv": "MAC-adress",
+            "no": "MAC-adresse",
+            "es": "Dirección MAC",
+            "da": "MAC-adresse"
+          },
+          "value": "00:00:00:00:00",
+          "hint": {
+            "en": "The MAC address of your spa.",
+            "nl": "Het MAC-adres van uw spa.",
+            "de": "Die MAC-Adresse Ihres Spas.",
+            "fr": "L'adresse MAC de votre spa.",
+            "it": "L'indirizzo MAC della tua spa.",
+            "sv": "MAC-adressen till ditt spa.",
+            "no": "MAC-adressen til spaet ditt.",
+            "es": "La dirección MAC de su spa.",
+            "da": "MAC-adressen til din spa."
+          }
+        },
+        {
+          "id": "time",
+          "type": "label",
+          "label": {
+            "en": "Time"
+          },
+          "value": " ",
+          "hint": {
+            "en": "The time of your spa."
+          }
+        },
+        {
+          "id": "time_scale",
+          "type": "label",
+          "label": {
+            "en": "Time scale",
+            "nl": "Tijdschaal",
+            "de": "Zeitskala",
+            "fr": "Échelle de temps",
+            "it": "Scala temporale",
+            "sv": "Tidsskala",
+            "no": "Tidsskala",
+            "es": "Escala de tiempo",
+            "da": "Tidsskala"
+          },
+          "value": " ",
+          "hint": {
+            "en": "The time scale of your spa.",
+            "nl": "De tijdschaal van uw spa.",
+            "de": "Die Zeitskala Ihres Spas.",
+            "fr": "L'échelle de temps de votre spa.",
+            "it": "La scala temporale della tua spa.",
+            "sv": "Tidsskalan på ditt spa.",
+            "no": "Tidsskalaen til spaet ditt.",
+            "es": "La escala de tiempo de su spa.",
+            "da": "Tidsskalaen til din spa."
+          }
+        },
+        {
+          "id": "sync_time",
+          "type": "dropdown",
+          "value": "no_sync",
+          "label": {
+            "en": "Sync Time",
+            "nl": "Synchronisatietijd",
+            "de": "Synchronisierungszeit",
+            "fr": "Temps de synchronisation",
+            "it": "Tempo di sincronizzazione",
+            "sv": "Synkronisera tid",
+            "no": "Synkronisera tid",
+            "es": "Tiempo de sincronización",
+            "da": "Synkroniseringstid"
+          },
+          "values": [
+            {
+              "id": "no_sync",
+              "label": {
+                "en": " "
+              }
+            },
+            {
+              "id": "sync",
+              "label": {
+                "en": "Sync now",
+                "nl": "Nu synchroniseren",
+                "de": "Jetzt synchronisieren",
+                "fr": "Synchroniser maintenant",
+                "it": "Sincronizza ora",
+                "sv": "Synkronisera nu",
+                "no": "Synkroniser nå",
+                "es": "Sincronizar ahora",
+                "da": "Synkroniser nu"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Sensor Visibility",
+            "nl": "Sensorzichtbaarheid",
+            "de": "Sensor Sichtbarkeit",
+            "fr": "Visibilité du capteur",
+            "it": "Visibilità del sensore",
+            "sv": "Sensor synlighet",
+            "no": "Sensor synlighet",
+            "es": "Visibilidad del sensor",
+            "da": "Sensor synlighed"
+          },
+          "children": [
+            {
+              "id": "show_pump_1",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Show Pump 1",
+                "nl": "Toon pomp 1",
+                "de": "Pumpe 1 anzeigen",
+                "fr": "Afficher la pompe 1",
+                "it": "Mostra pompa 1",
+                "sv": "Visa pump 1",
+                "no": "Vis pumpe 1",
+                "es": "Mostrar bomba 1",
+                "da": "Vis pumpe 1"
+              }
+            },
+            {
+              "id": "show_pump_2",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Show Pump 2",
+                "nl": "Toon pomp 2",
+                "de": "Pumpe 2 anzeigen",
+                "fr": "Afficher la pompe 2",
+                "it": "Mostra pompa 2",
+                "sv": "Visa pump 2",
+                "no": "Vis pumpe 2",
+                "es": "Mostrar bomba 2",
+                "da": "Vis pumpe 2"
+              }
+            },
+            {
+              "id": "show_pump_3",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Show Pump 3",
+                "nl": "Toon pomp 3",
+                "de": "Pumpe 3 anzeigen",
+                "fr": "Afficher la pompe 3",
+                "it": "Mostra pompa 3",
+                "sv": "Visa pump 3",
+                "no": "Vis pumpe 3",
+                "es": "Mostrar bomba 3",
+                "da": "Vis pumpe 3"
+              }
+            },
+            {
+              "id": "show_pump_4",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Show Pump 4",
+                "nl": "Toon pomp 4",
+                "de": "Pumpe 4 anzeigen",
+                "fr": "Afficher la pompe 4",
+                "it": "Mostra pompa 4",
+                "sv": "Visa pump 4",
+                "no": "Vis pumpe 4",
+                "es": "Mostrar bomba 4",
+                "da": "Vis pumpe 4"
+              }
+            },
+            {
+              "id": "show_pump_5",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Show Pump 5",
+                "nl": "Toon pomp 5",
+                "de": "Pumpe 5 anzeigen",
+                "fr": "Afficher la pompe 5",
+                "it": "Mostra pompa 5",
+                "sv": "Visa pump 5",
+                "no": "Vis pumpe 5",
+                "es": "Mostrar bomba 5",
+                "da": "Vis pumpe 5"
+              }
+            },
+            {
+              "id": "show_pump_6",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Show Pump 6",
+                "nl": "Toon pomp 6",
+                "de": "Pumpe 6 anzeigen",
+                "fr": "Afficher la pompe 6",
+                "it": "Mostra pompa 6",
+                "sv": "Visa pump 6",
+                "no": "Vis pumpe 6",
+                "es": "Mostrar bomba 6",
+                "da": "Vis pumpe 6"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "alarm_cold": {
+      "id": "alarm_cold",
+      "type": "boolean",
+      "title": {
+        "en": "Freezing Alarm",
+        "nl": "Vorstalarm",
+        "da": "Frostalarm",
+        "it": "Allarme gelo",
+        "ko": "동결 알림",
+        "pl": "Alarm zamrożenia",
+        "ru": "Сигнал замерзания",
+        "sv": "Frostvarning",
+        "es": "Alarma de congelación",
+        "fr": "Alarme de gel",
+        "no": "Frostalarm"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "decimals": 0
+    },
+    "alarm_connectivity": {
+      "id": "alarm_connectivity",
+      "type": "boolean",
+      "title": {
+        "en": "Connectivity Alarm",
+        "nl": "Verbindingsalarm",
+        "da": "Forbindelsesalarm",
+        "it": "Allarme connettività",
+        "ko": "연결 알림",
+        "pl": "Alarm łączności",
+        "ru": "Сигнал связи",
+        "sv": "Anslutningslarm",
+        "es": "Alarma de conexión",
+        "fr": "Alarme de connectivité",
+        "no": "Tilkoblingsalarm"
+      },
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Connecton to Spa went down!"
+      },
+      "insightsTitleFalse": {
+        "en": "Connecton to Spa is up!"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "decimals": 0
+    },
+    "blower": {
+      "type": "boolean",
+      "title": {
+        "en": "Blower"
+      },
+      "uiComponent": "toggle",
+      "icon": "assets/icons/blower.svg",
+      "getable": true,
+      "setable": true
+    },
+    "circPump": {
+      "type": "enum",
+      "title": {
+        "en": "Circulation Pump",
+        "nl": "Circulatiepomp",
+        "da": "Cirkulationspumpe",
+        "it": "Pompa di circolazione",
+        "ko": "순환 펌프",
+        "pl": "Pompa obiegowa",
+        "ru": "Циркуляционный насос",
+        "sv": "Cirkulationspump",
+        "es": "Bomba de circulación",
+        "fr": "Pompe de circulation",
+        "no": "Sirkulasjonspumpe"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "da": "Slukket",
+            "it": "Spenta",
+            "ko": "꺼짐",
+            "pl": "Wyłączona",
+            "ru": "Выкл",
+            "sv": "Av",
+            "es": "Apagada",
+            "fr": "Arrêtée",
+            "no": "Av"
+          }
+        },
+        {
+          "id": "on",
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "da": "Tændt",
+            "it": "Accesa",
+            "ko": "켜짐",
+            "pl": "Włączona",
+            "ru": "Вкл",
+            "sv": "På",
+            "es": "Encendida",
+            "fr": "Allumée",
+            "no": "På"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "assets/icons/pump.svg",
+      "getable": true,
+      "setable": false
+    },
+    "heating": {
+      "type": "enum",
+      "title": {
+        "en": "Heating",
+        "nl": "Verwarming",
+        "da": "Opvarmning",
+        "it": "Riscaldamento",
+        "ko": "난방",
+        "pl": "Ogrzewanie",
+        "ru": "Отопление",
+        "sv": "Uppvärmning",
+        "es": "Calefacción",
+        "fr": "Chauffage",
+        "no": "Oppvarming"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "da": "Slukket",
+            "it": "Spento",
+            "ko": "꺼짐",
+            "pl": "Wyłączone",
+            "ru": "Выкл",
+            "sv": "Av",
+            "es": "Apagado",
+            "fr": "Arrêté",
+            "no": "Av"
+          }
+        },
+        {
+          "id": "heating",
+          "title": {
+            "en": "Heating",
+            "nl": "Verwarming",
+            "da": "Opvarmer",
+            "it": "In riscaldamento",
+            "ko": "난방 중",
+            "pl": "Ogrzewa",
+            "ru": "Греет",
+            "sv": "Värmer",
+            "es": "Calentando",
+            "fr": "En chauffe",
+            "no": "Varmer"
+          }
+        },
+        {
+          "id": "heat_waiting",
+          "title": {
+            "en": "Heat Waiting",
+            "nl": "Wacht op verwarming",
+            "da": "Venter på varme",
+            "it": "In attesa di riscaldamento",
+            "ko": "난방 대기 중",
+            "pl": "Oczekiwanie na ogrzewanie",
+            "ru": "Ожидание нагрева",
+            "sv": "Väntar på värme",
+            "es": "Esperando calefacción",
+            "fr": "Attente de chauffe",
+            "no": "Venter på varme"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "assets/icons/heat.svg",
+      "getable": true,
+      "setable": false
+    },
+    "heatingTime": {
+      "type": "string",
+      "title": {
+        "en": "Heating Duration (h)",
+        "sv": "Uppvärmningstid (h)",
+        "da": "Opvarmningstid (t)",
+        "no": "Oppvarmingstid (t)",
+        "fi": "Lämmitysaika (h)",
+        "de": "Heizdauer (h)",
+        "fr": "Durée de chauffage (h)",
+        "es": "Duración del calentamiento (h)",
+        "it": "Durata riscaldamento (h)",
+        "nl": "Verwarmingsduur (u)",
+        "pl": "Czas nagrzewania (h)"
+      },
+      "uiComponent": "sensor",
+      "icon": "assets/icons/clock.svg",
+      "getable": true,
+      "setable": false
+    },
+    "light1": {
+      "type": "boolean",
+      "title": {
+        "en": "Light 1",
+        "sv": "Belysning 1",
+        "da": "Belysning 1",
+        "no": "Belysning 1",
+        "fi": "Valaistus 1",
+        "de": "Beleuchtung 1",
+        "fr": "Éclairage 1",
+        "es": "Iluminación 1",
+        "it": "Illuminazione 1",
+        "nl": "Verlichting 1",
+        "pl": "Oświetlenie 1"
+      },
+      "uiComponent": "toggle",
+      "icon": "assets/icons/light.svg",
+      "getable": true,
+      "setable": true
+    },
+    "light2": {
+      "type": "boolean",
+      "title": {
+        "en": "Light 2",
+        "sv": "Belysning 2",
+        "da": "Belysning 2",
+        "no": "Belysning 2",
+        "fi": "Valaistus 2",
+        "de": "Beleuchtung 2",
+        "fr": "Éclairage 2",
+        "es": "Iluminación 2",
+        "it": "Illuminazione 2",
+        "nl": "Verlichting 2",
+        "pl": "Oświetlenie 2"
+      },
+      "uiComponent": "toggle",
+      "icon": "assets/icons/light.svg",
+      "getable": true,
+      "setable": true
+    },
+    "measure_temperature": {
+      "type": "number",
+      "title": {
+        "en": "Current Temperature",
+        "sv": "Aktuell temperatur",
+        "da": "Aktuel temperatur",
+        "no": "Aktuell temperatur",
+        "fi": "Nykyinen lämpötila",
+        "de": "Aktuelle Temperatur",
+        "fr": "Température actuelle",
+        "es": "Temperatura actual",
+        "it": "Temperatura attuale",
+        "nl": "Huidige temperatuur",
+        "pl": "Aktualna temperatura"
+      },
+      "uiComponent": "thermostat",
+      "icon": "assets/icons/measureTemperature.svg",
+      "units": {
+        "en": "°C",
+        "sv": "°C",
+        "da": "°C",
+        "no": "°C",
+        "fi": "°C",
+        "de": "°C",
+        "fr": "°C",
+        "es": "°C",
+        "it": "°C",
+        "nl": "°C",
+        "pl": "°C"
+      },
+      "getable": true,
+      "setable": false,
+      "decimals": 1,
+      "insights": true
+    },
+    "modeFilter": {
+      "type": "enum",
+      "title": {
+        "en": "Filter Mode",
+        "sv": "Filterläge",
+        "da": "Filtertilstand",
+        "no": "Filtermodus",
+        "fi": "Suodatintila",
+        "de": "Filtermodus",
+        "fr": "Mode de filtre",
+        "es": "Modo de filtro",
+        "it": "Modalità filtro",
+        "nl": "Filtermodus",
+        "pl": "Tryb filtra"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "cycle_1",
+          "title": {
+            "en": "Cycle 1",
+            "sv": "Cykel 1",
+            "da": "Cyklus 1",
+            "no": "Syklus 1",
+            "fi": "Jakso 1",
+            "de": "Zyklus 1",
+            "fr": "Cycle 1",
+            "es": "Ciclo 1",
+            "it": "Ciclo 1",
+            "nl": "Cyclus 1",
+            "pl": "Cykl 1"
+          }
+        },
+        {
+          "id": "cycle_2",
+          "title": {
+            "en": "Cycle 2",
+            "sv": "Cykel 2",
+            "da": "Cyklus 2",
+            "no": "Syklus 2",
+            "fi": "Jakso 2",
+            "de": "Zyklus 2",
+            "fr": "Cycle 2",
+            "es": "Ciclo 2",
+            "it": "Ciclo 2",
+            "nl": "Cyclus 2",
+            "pl": "Cykl 2"
+          }
+        },
+        {
+          "id": "cycle_1_&amp;_2",
+          "title": {
+            "en": "Cycle 1 &amp; 2",
+            "sv": "Cykel 1 &amp; 2",
+            "da": "Cyklus 1 &amp; 2",
+            "no": "Syklus 1 &amp; 2",
+            "fi": "Jaksot 1 &amp; 2",
+            "de": "Zyklus 1 &amp; 2",
+            "fr": "Cycle 1 &amp; 2",
+            "es": "Ciclo 1 &amp; 2",
+            "it": "Ciclo 1 &amp; 2",
+            "nl": "Cyclus 1 &amp; 2",
+            "pl": "Cykl 1 &amp; 2"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "assets/icons/filter.svg",
+      "getable": true,
+      "setable": false
+    },
+    "modeHeating": {
+      "type": "enum",
+      "title": {
+        "en": "Heater Mode",
+        "nl": "Verwarmingsmodus",
+        "da": "Varmetilstand",
+        "it": "Modalità riscaldamento",
+        "ko": "히터 모드",
+        "pl": "Tryb grzania",
+        "ru": "Режим нагрева",
+        "sv": "Värmeläge",
+        "es": "Modo calefacción",
+        "fr": "Mode chauffage",
+        "no": "Varmemodus"
+      },
+      "desc": {
+        "en": "The heater mode"
+      },
+      "values": [
+        {
+          "id": "rest",
+          "title": {
+            "en": "Rest"
+          }
+        },
+        {
+          "id": "ready",
+          "title": {
+            "en": "Ready"
+          }
+        },
+        {
+          "id": "ready+rest",
+          "title": {
+            "en": "Ready In Rest"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "icon": "assets/icons/targetTemperature_level.svg"
+    },
+    "modePriming": {
+      "type": "string",
+      "title": {
+        "en": "Priming Mode"
+      },
+      "uiComponent": "sensor",
+      "icon": "assets/icons/primingMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "modeRunning": {
+      "type": "string",
+      "title": {
+        "en": "Running Mode"
+      },
+      "uiComponent": "sensor",
+      "icon": "assets/icons/runningMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "modeStandby": {
+      "type": "boolean",
+      "title": {
+        "en": "Standby Mode",
+        "sv": "Standbyläge",
+        "da": "Standbytilstand",
+        "no": "Standbymodus",
+        "fi": "Valmiustila",
+        "de": "Standby-Modus",
+        "fr": "Mode veille",
+        "es": "Modo de espera",
+        "it": "Modalità standby",
+        "nl": "Standby-modus",
+        "pl": "Tryb czuwania"
+      },
+      "uiComponent": null,
+      "icon": "assets/icons/standby.svg",
+      "getable": true,
+      "setable": false
+    },
+    "pump1": {
+      "type": "enum",
+      "title": {
+        "en": "Pump 1",
+        "sv": "Pump 1",
+        "da": "Pumpe 1",
+        "no": "Pumpe 1",
+        "fi": "Pumppu 1",
+        "de": "Pumpe 1",
+        "fr": "Pompe 1",
+        "es": "Bomba 1",
+        "it": "Pompa 1",
+        "nl": "Pomp 1",
+        "pl": "Pompa 1"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "sv": "Låg",
+            "da": "Lav",
+            "no": "Lav",
+            "fi": "Matala",
+            "de": "Niedrig",
+            "fr": "Bas",
+            "es": "Bajo",
+            "it": "Basso",
+            "nl": "Laag",
+            "pl": "Niski"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "sv": "Hög",
+            "da": "Høj",
+            "no": "Høy",
+            "fi": "Korkea",
+            "de": "Hoch",
+            "fr": "Élevé",
+            "es": "Alto",
+            "it": "Alto",
+            "nl": "Hoog",
+            "pl": "Wysoki"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "assets/icons/pumpMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "pump2": {
+      "type": "enum",
+      "title": {
+        "en": "Pump 2",
+        "sv": "Pump 2",
+        "da": "Pumpe 2",
+        "no": "Pumpe 2",
+        "fi": "Pumppu 2",
+        "de": "Pumpe 2",
+        "fr": "Pompe 2",
+        "es": "Bomba 2",
+        "it": "Pompa 2",
+        "nl": "Pomp 2",
+        "pl": "Pompa 2"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "sv": "Låg",
+            "da": "Lav",
+            "no": "Lav",
+            "fi": "Matala",
+            "de": "Niedrig",
+            "fr": "Bas",
+            "es": "Bajo",
+            "it": "Basso",
+            "nl": "Laag",
+            "pl": "Niski"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "sv": "Hög",
+            "da": "Høj",
+            "no": "Høy",
+            "fi": "Korkea",
+            "de": "Hoch",
+            "fr": "Élevé",
+            "es": "Alto",
+            "it": "Alto",
+            "nl": "Hoog",
+            "pl": "Wysoki"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "assets/icons/pumpMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "pump3": {
+      "type": "enum",
+      "title": {
+        "en": "Pump 3",
+        "sv": "Pump 3",
+        "da": "Pumpe 3",
+        "no": "Pumpe 3",
+        "fi": "Pumppu 3",
+        "de": "Pumpe 3",
+        "fr": "Pompe 3",
+        "es": "Bomba 3",
+        "it": "Pompa 3",
+        "nl": "Pomp 3",
+        "pl": "Pompa 3"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "sv": "Låg",
+            "da": "Lav",
+            "no": "Lav",
+            "fi": "Matala",
+            "de": "Niedrig",
+            "fr": "Bas",
+            "es": "Bajo",
+            "it": "Basso",
+            "nl": "Laag",
+            "pl": "Niski"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "sv": "Hög",
+            "da": "Høj",
+            "no": "Høy",
+            "fi": "Korkea",
+            "de": "Hoch",
+            "fr": "Élevé",
+            "es": "Alto",
+            "it": "Alto",
+            "nl": "Hoog",
+            "pl": "Wysoki"
+          }
+        }
+      ],
+      "uiComponent": null,
+      "icon": "assets/icons/pumpMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "pump4": {
+      "type": "enum",
+      "title": {
+        "en": "Pump 4",
+        "sv": "Pump 4",
+        "da": "Pumpe 4",
+        "no": "Pumpe 4",
+        "fi": "Pumppu 4",
+        "de": "Pumpe 4",
+        "fr": "Pompe 4",
+        "es": "Bomba 4",
+        "it": "Pompa 4",
+        "nl": "Pomp 4",
+        "pl": "Pompa 4"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "sv": "Låg",
+            "da": "Lav",
+            "no": "Lav",
+            "fi": "Matala",
+            "de": "Niedrig",
+            "fr": "Bas",
+            "es": "Bajo",
+            "it": "Basso",
+            "nl": "Laag",
+            "pl": "Niski"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "sv": "Hög",
+            "da": "Høj",
+            "no": "Høy",
+            "fi": "Korkea",
+            "de": "Hoch",
+            "fr": "Élevé",
+            "es": "Alto",
+            "it": "Alto",
+            "nl": "Hoog",
+            "pl": "Wysoki"
+          }
+        }
+      ],
+      "uiComponent": null,
+      "icon": "assets/icons/pumpMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "pump5": {
+      "type": "enum",
+      "title": {
+        "en": "Pump 5",
+        "sv": "Pump 5",
+        "da": "Pumpe 5",
+        "no": "Pumpe 5",
+        "fi": "Pumppu 5",
+        "de": "Pumpe 5",
+        "fr": "Pompe 5",
+        "es": "Bomba 5",
+        "it": "Pompa 5",
+        "nl": "Pomp 5",
+        "pl": "Pompa 5"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "sv": "Låg",
+            "da": "Lav",
+            "no": "Lav",
+            "fi": "Matala",
+            "de": "Niedrig",
+            "fr": "Bas",
+            "es": "Bajo",
+            "it": "Basso",
+            "nl": "Laag",
+            "pl": "Niski"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "sv": "Hög",
+            "da": "Høj",
+            "no": "Høy",
+            "fi": "Korkea",
+            "de": "Hoch",
+            "fr": "Élevé",
+            "es": "Alto",
+            "it": "Alto",
+            "nl": "Hoog",
+            "pl": "Wysoki"
+          }
+        }
+      ],
+      "uiComponent": null,
+      "icon": "assets/icons/pumpMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "pump6": {
+      "type": "enum",
+      "title": {
+        "en": "Pump 6",
+        "sv": "Pump 6",
+        "da": "Pumpe 6",
+        "no": "Pumpe 6",
+        "fi": "Pumppu 6",
+        "de": "Pumpe 6",
+        "fr": "Pompe 6",
+        "es": "Bomba 6",
+        "it": "Pompa 6",
+        "nl": "Pomp 6",
+        "pl": "Pompa 6"
+      },
+      "values": [
+        {
+          "id": "off",
+          "title": {
+            "en": "Off",
+            "sv": "Av",
+            "da": "Fra",
+            "no": "Av",
+            "fi": "Pois",
+            "de": "Aus",
+            "fr": "Arrêt",
+            "es": "Apagado",
+            "it": "Spento",
+            "nl": "Uit",
+            "pl": "Wyłączony"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "sv": "Låg",
+            "da": "Lav",
+            "no": "Lav",
+            "fi": "Matala",
+            "de": "Niedrig",
+            "fr": "Bas",
+            "es": "Bajo",
+            "it": "Basso",
+            "nl": "Laag",
+            "pl": "Niski"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "sv": "Hög",
+            "da": "Høj",
+            "no": "Høy",
+            "fi": "Korkea",
+            "de": "Hoch",
+            "fr": "Élevé",
+            "es": "Alto",
+            "it": "Alto",
+            "nl": "Hoog",
+            "pl": "Wysoki"
+          }
+        }
+      ],
+      "uiComponent": null,
+      "icon": "assets/icons/pumpMode.svg",
+      "getable": true,
+      "setable": false
+    },
+    "reminderType": {
+      "type": "enum",
+      "title": {
+        "en": "Reminder",
+        "sv": "Påminelse",
+        "da": "Påmindelse",
+        "no": "Påminnelse",
+        "fi": "Muistutus",
+        "de": "Erinnerung",
+        "fr": "Rappel",
+        "es": "Recordatorio",
+        "it": "Promemoria",
+        "nl": "Herinnering",
+        "pl": "Przypomnienie"
+      },
+      "values": [
+        {
+          "id": "none",
+          "title": {
+            "en": "None",
+            "sv": "Ingen",
+            "da": "Ingen",
+            "no": "Ingen",
+            "fi": "Ei mitään",
+            "de": "Keine",
+            "fr": "Aucun",
+            "es": "Ninguno",
+            "it": "Nessuno",
+            "nl": "Geen",
+            "pl": "Brak"
+          }
+        },
+        {
+          "id": "clean_filter",
+          "title": {
+            "en": "Clean Filter",
+            "sv": "Rengör filter",
+            "da": "Rens filter",
+            "no": "Rengjør filter",
+            "fi": "Puhdista suodatin",
+            "de": "Filter reinigen",
+            "fr": "Nettoyer le filtre",
+            "es": "Limpiar el filtro",
+            "it": "Pulire il filtro",
+            "nl": "Filter reinigen",
+            "pl": "Wyczyść filtr"
+          }
+        },
+        {
+          "id": "check_the_pH",
+          "title": {
+            "en": "Check pH value",
+            "sv": "Kontrollera pH-värde",
+            "da": "Kontroller pH-værdi",
+            "no": "Sjekk pH-verdi",
+            "fi": "Tarkista pH-arvo",
+            "de": "pH-Wert prüfen",
+            "fr": "Vérifier la valeur du pH",
+            "es": "Verificar valor de pH",
+            "it": "Controlla il valore del pH",
+            "nl": "Controleer pH-waarde",
+            "pl": "Sprawdź wartość pH"
+          }
+        },
+        {
+          "id": "check_the_sanitizer",
+          "title": {
+            "en": "Check Sanitizer",
+            "sv": "Kontrollera desinfektionsmedel",
+            "da": "Kontroller desinfektionsmiddel",
+            "no": "Sjekk desinfeksjonsmiddel",
+            "fi": "Tarkista desinfiointiaine",
+            "de": "Desinfektionsmittel prüfen",
+            "fr": "Vérifier le désinfectant",
+            "es": "Verificar desinfectante",
+            "it": "Controlla il disinfettante",
+            "nl": "Controleer ontsmettingsmiddel",
+            "pl": "Sprawdź środek dezynfekujący"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "sv": "Okänd",
+            "da": "Ukendt",
+            "no": "Ukjent",
+            "fi": "Tuntematon",
+            "de": "Unbekannt",
+            "fr": "Inconnu",
+            "es": "Desconocido",
+            "it": "Sconosciuto",
+            "nl": "Onbekend",
+            "pl": "Nieznany"
+          }
+        }
+      ],
+      "uiComponent": "sensor",
+      "icon": "assets/icons/bell.svg",
+      "getable": true,
+      "setable": false
+    },
+    "target_temperature": {
+      "type": "number",
+      "title": {
+        "en": "Target Temperature",
+        "sv": "Måltemperatur",
+        "da": "Måletemperatur",
+        "no": "Måltemperatur",
+        "fi": "Tavoitelämpötila",
+        "de": "Zieltemperatur",
+        "fr": "Température cible",
+        "es": "Temperatura objetivo",
+        "it": "Temperatura target",
+        "nl": "Doeltemperatuur",
+        "pl": "Temperatura docelowa"
+      },
+      "uiComponent": "thermostat",
+      "icon": "assets/icons/targetTemperature.svg",
+      "getable": true,
+      "setable": true,
+      "units": {
+        "en": "°C",
+        "sv": "°C",
+        "da": "°C",
+        "no": "°C",
+        "fi": "°C",
+        "de": "°C",
+        "fr": "°C",
+        "es": "°C",
+        "it": "°C",
+        "nl": "°C",
+        "pl": "°C"
+      },
+      "max": 26,
+      "min": 10,
+      "decimals": 1,
+      "step": 0.5,
+      "insights": true
+    },
+    "target_temperature_level": {
+      "type": "enum",
+      "title": {
+        "en": "Temperature level",
+        "nl": "Gewenst temperatuurniveau",
+        "da": "Måltemperaturniveau",
+        "it": "Livello di temperatura target",
+        "ko": "희망 온도 설정",
+        "pl": "Docelowy poziom temperatury",
+        "ru": "Уровень заданной температуры",
+        "sv": "Temperaturnivå",
+        "es": "Nivel de temperatura deseado",
+        "fr": "Niveau de température cible",
+        "no": "Ønsket temperaturnivå"
+      },
+      "desc": {
+        "en": "The target temperature level of the appliance.",
+        "nl": "Het gewenste temperatuurniveau van het apparaat.",
+        "da": "Apparatets måltemperaturniveau.",
+        "it": "Il livello di temperatura target dell'apparecchio.",
+        "ko": "가전의 목표 온도 수준입니다.",
+        "pl": "Docelowy poziom temperatury urządzenia.",
+        "ru": "Уровень заданной температуры прибора.",
+        "sv": "Apparatens önskade temperaturnivå.",
+        "es": "El nivel de temperatura deseado del dispositivo.",
+        "fr": "Le niveau de température cible de l'appareil.",
+        "no": "Ønsket temperaturnivå for apparatet."
+      },
+      "values": [
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag",
+            "da": "Lav",
+            "it": "Basso",
+            "ko": "낮음",
+            "pl": "Niski",
+            "ru": "Низкий",
+            "sv": "Låg",
+            "es": "Bajo",
+            "fr": "Faible",
+            "no": "Lavt"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog",
+            "da": "Høj",
+            "it": "Alto",
+            "ko": "높음",
+            "pl": "Wysoki",
+            "ru": "Высокий",
+            "sv": "Hög",
+            "es": "Alto",
+            "fr": "Élevé",
+            "no": "Høyt"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "icon": "assets/icons/targetTemperature_level.svg"
+    },
+    "tempRange": {
+      "type": "enum",
+      "title": {
+        "en": "Temperature Range",
+        "sv": "Temperaturnivå",
+        "da": "Temperaturområde",
+        "no": "Temperaturområde",
+        "fi": "Lämpötila-alue",
+        "de": "Temperaturbereich",
+        "fr": "Plage de température",
+        "es": "Rango de temperatura",
+        "it": "Intervallo di temperatura",
+        "nl": "Temperatuurbereik",
+        "pl": "Zakres temperatury"
+      },
+      "values": [
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag",
+            "da": "Lav",
+            "it": "Basso",
+            "ko": "낮음",
+            "pl": "Niski",
+            "ru": "Низкий",
+            "sv": "Låg",
+            "es": "Bajo",
+            "fr": "Faible",
+            "no": "Lavt"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog",
+            "da": "Høj",
+            "it": "Alto",
+            "ko": "높음",
+            "pl": "Wysoki",
+            "ru": "Высокий",
+            "sv": "Hög",
+            "es": "Alto",
+            "fr": "Élevé",
+            "no": "Høyt"
+          }
+        }
+      ],
+      "uiComponent": null,
+      "icon": "assets/icons/targetTemperature_level.svg",
+      "getable": true,
+      "setable": false
+    },
+    "tempScale": {
+      "type": "string",
+      "title": {
+        "en": "Temperature Scale"
+      },
+      "uiComponent": null,
+      "icon": "assets/icons/measureTemperature.svg",
+      "getable": true,
+      "setable": false
+    },
+    "tempSensorA": {
+      "type": "number",
+      "title": {
+        "en": "Sensor A Temperature"
+      },
+      "units": {
+        "en": "°C"
+      },
+      "uiComponent": null,
+      "icon": "assets/icons/measureTemperature.svg",
+      "getable": true,
+      "setable": false,
+      "decimals": 1
+    },
+    "tempSensorB": {
+      "type": "number",
+      "title": {
+        "en": "Sensor B Temperature"
+      },
+      "units": {
+        "en": "°C"
+      },
+      "uiComponent": null,
+      "icon": "assets/icons/measureTemperature.svg",
+      "getable": true,
+      "setable": false,
+      "decimals": 1
+    },
+    "time": {
+      "type": "string",
+      "title": {
+        "en": "Time",
+        "sv": "Tid",
+        "da": "Tid",
+        "no": "Tid",
+        "fi": "Aika",
+        "de": "Zeit",
+        "fr": "Heure",
+        "es": "Hora",
+        "it": "Ora",
+        "nl": "Tijd",
+        "pl": "Czas"
+      },
+      "uiComponent": "sensor",
+      "icon": "assets/icons/clock.svg",
+      "getable": true,
+      "setable": false
+    },
+    "timeScale": {
+      "type": "string",
+      "title": {
+        "en": "Time Scale",
+        "sv": "Tidsformat",
+        "da": "Tidsformat",
+        "no": "Tidsformat",
+        "fi": "Aikamuoto",
+        "de": "Zeitformat",
+        "fr": "Format de l'heure",
+        "es": "Formato de hora",
+        "it": "Formato orario",
+        "nl": "Tijdnotatie",
+        "pl": "Format czasu"
+      },
+      "uiComponent": null,
+      "icon": "assets/icons/timeScale.svg",
+      "getable": true,
+      "setable": false
+    }
+  }
+}

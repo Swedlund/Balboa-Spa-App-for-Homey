@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Priming Mode"
+  },
+  "uiComponent": "sensor",
+  "icon": "assets/icons/primingMode.svg",
+  "getable": true,
+  "setable": false
+}

@@ -1,0 +1,86 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Filter Mode",
+    "sv": "Filterläge",
+    "da": "Filtertilstand",
+    "no": "Filtermodus",
+    "fi": "Suodatintila",
+    "de": "Filtermodus",
+    "fr": "Mode de filtre",
+    "es": "Modo de filtro",
+    "it": "Modalità filtro",
+    "nl": "Filtermodus",
+    "pl": "Tryb filtra"
+  },
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "sv": "Av",
+        "da": "Fra",
+        "no": "Av",
+        "fi": "Pois",
+        "de": "Aus",
+        "fr": "Arrêt",
+        "es": "Apagado",
+        "it": "Spento",
+        "nl": "Uit",
+        "pl": "Wyłączony"
+      }
+    },
+    {
+      "id": "cycle_1",
+      "title": {
+        "en": "Cycle 1",
+        "sv": "Cykel 1",
+        "da": "Cyklus 1",
+        "no": "Syklus 1",
+        "fi": "Jakso 1",
+        "de": "Zyklus 1",
+        "fr": "Cycle 1",
+        "es": "Ciclo 1",
+        "it": "Ciclo 1",
+        "nl": "Cyclus 1",
+        "pl": "Cykl 1"
+      }
+    },
+    {
+      "id": "cycle_2",
+      "title": {
+        "en": "Cycle 2",
+        "sv": "Cykel 2",
+        "da": "Cyklus 2",
+        "no": "Syklus 2",
+        "fi": "Jakso 2",
+        "de": "Zyklus 2",
+        "fr": "Cycle 2",
+        "es": "Ciclo 2",
+        "it": "Ciclo 2",
+        "nl": "Cyclus 2",
+        "pl": "Cykl 2"
+      }
+    },
+    {
+      "id": "cycle_1_&amp;_2",
+      "title": {
+        "en": "Cycle 1 &amp; 2",
+        "sv": "Cykel 1 &amp; 2",
+        "da": "Cyklus 1 &amp; 2",
+        "no": "Syklus 1 &amp; 2",
+        "fi": "Jaksot 1 &amp; 2",
+        "de": "Zyklus 1 &amp; 2",
+        "fr": "Cycle 1 &amp; 2",
+        "es": "Ciclo 1 &amp; 2",
+        "it": "Ciclo 1 &amp; 2",
+        "nl": "Cyclus 1 &amp; 2",
+        "pl": "Cykl 1 &amp; 2"
+      }
+    }
+  ],
+  "uiComponent": "sensor",
+  "icon": "assets/icons/filter.svg",
+  "getable": true,
+  "setable": false
+}

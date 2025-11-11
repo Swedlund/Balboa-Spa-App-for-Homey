@@ -1,0 +1,75 @@
+/* Custom CSS styling from the provided link */
+.homey-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+.homey-title {
+  font-size: 24px;
+  margin: 0;
+}
+.homey-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+}
+.homey-form-fieldset {
+  border: 1px solid #e9ecef;
+  padding: 20px;
+  margin: 20px 0;
+}
+.homey-form-legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+.homey-form-group {
+  margin-bottom: 15px;
+}
+.homey-form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+.homey-form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+.homey-button-primary-full {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.homey-button-primary-full:hover {
+  background-color: #0056b3;
+}
+.troubleshooting-box {
+  border: 1px solid #e9ecef;
+  padding: 20px;
+  margin: 20px 0;
+}
+.homey-nav {
+  background-color: #343a40;
+  padding: 10px;
+}
+.homey-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.homey-nav-item {
+  margin-right: 20px;
+}
+.homey-nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.homey-nav-item a:hover {
+  text-decoration: underline;
+}
+.homey-content {
+  padding: 20px;
+}

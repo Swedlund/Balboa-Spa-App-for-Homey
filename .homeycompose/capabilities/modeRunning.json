@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Running Mode"
+  },
+  "uiComponent": "sensor",
+  "icon": "assets/icons/runningMode.svg",
+  "getable": true,
+  "setable": false
+}

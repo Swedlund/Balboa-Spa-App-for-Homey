@@ -1,0 +1,43 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Heater Mode",
+    "nl": "Verwarmingsmodus",
+    "da": "Varmetilstand",
+    "it": "Modalità riscaldamento",
+    "ko": "히터 모드",
+    "pl": "Tryb grzania",
+    "ru": "Режим нагрева",
+    "sv": "Värmeläge",
+    "es": "Modo calefacción",
+    "fr": "Mode chauffage",
+    "no": "Varmemodus"
+  },
+  "desc": {
+    "en": "The heater mode"
+  },
+  "values": [
+    {
+      "id": "rest",
+      "title": {
+        "en": "Rest"
+      }
+    },
+    {
+      "id": "ready",
+      "title": {
+        "en": "Ready"
+      }
+    },
+    {
+      "id": "ready+rest",
+      "title": {
+        "en": "Ready In Rest"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "icon": "assets/icons/targetTemperature_level.svg"
+}

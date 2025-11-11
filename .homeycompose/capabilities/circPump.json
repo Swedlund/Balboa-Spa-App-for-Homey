@@ -1,0 +1,54 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Circulation Pump",
+    "nl": "Circulatiepomp",
+    "da": "Cirkulationspumpe",
+    "it": "Pompa di circolazione",
+    "ko": "순환 펌프",
+    "pl": "Pompa obiegowa",
+    "ru": "Циркуляционный насос",
+    "sv": "Cirkulationspump",
+    "es": "Bomba de circulación",
+    "fr": "Pompe de circulation",
+    "no": "Sirkulasjonspumpe"
+  },
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "da": "Slukket",
+        "it": "Spenta",
+        "ko": "꺼짐",
+        "pl": "Wyłączona",
+        "ru": "Выкл",
+        "sv": "Av",
+        "es": "Apagada",
+        "fr": "Arrêtée",
+        "no": "Av"
+      }
+    },
+    {
+      "id": "on",
+      "title": {
+        "en": "On",
+        "nl": "Aan",
+        "da": "Tændt",
+        "it": "Accesa",
+        "ko": "켜짐",
+        "pl": "Włączona",
+        "ru": "Вкл",
+        "sv": "På",
+        "es": "Encendida",
+        "fr": "Allumée",
+        "no": "På"
+      }
+    }
+  ],
+  "uiComponent": "sensor",
+  "icon": "assets/icons/pump.svg",
+  "getable": true,
+  "setable": false
+}

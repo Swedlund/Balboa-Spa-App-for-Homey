@@ -1,0 +1,70 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Heating",
+    "nl": "Verwarming",
+    "da": "Opvarmning",
+    "it": "Riscaldamento",
+    "ko": "난방",
+    "pl": "Ogrzewanie",
+    "ru": "Отопление",
+    "sv": "Uppvärmning",
+    "es": "Calefacción",
+    "fr": "Chauffage",
+    "no": "Oppvarming"
+  },
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "nl": "Uit",
+        "da": "Slukket",
+        "it": "Spento",
+        "ko": "꺼짐",
+        "pl": "Wyłączone",
+        "ru": "Выкл",
+        "sv": "Av",
+        "es": "Apagado",
+        "fr": "Arrêté",
+        "no": "Av"
+      }
+    },
+    {
+      "id": "heating",
+      "title": {
+        "en": "Heating",
+        "nl": "Verwarming",
+        "da": "Opvarmer",
+        "it": "In riscaldamento",
+        "ko": "난방 중",
+        "pl": "Ogrzewa",
+        "ru": "Греет",
+        "sv": "Värmer",
+        "es": "Calentando",
+        "fr": "En chauffe",
+        "no": "Varmer"
+      }
+    },
+    {
+      "id": "heat_waiting",
+      "title": {
+        "en": "Heat Waiting",
+        "nl": "Wacht op verwarming",
+        "da": "Venter på varme",
+        "it": "In attesa di riscaldamento",
+        "ko": "난방 대기 중",
+        "pl": "Oczekiwanie na ogrzewanie",
+        "ru": "Ожидание нагрева",
+        "sv": "Väntar på värme",
+        "es": "Esperando calefacción",
+        "fr": "Attente de chauffe",
+        "no": "Venter på varme"
+      }
+    }
+  ],
+  "uiComponent": "sensor",
+  "icon": "assets/icons/heat.svg",
+  "getable": true,
+  "setable": false
+}

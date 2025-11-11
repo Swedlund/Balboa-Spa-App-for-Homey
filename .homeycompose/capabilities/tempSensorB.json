@@ -1,0 +1,14 @@
+{
+    "type": "number",
+    "title": {
+      "en": "Sensor B Temperature"
+    },
+    "units": {
+      "en": "°C"
+    },
+    "uiComponent": null,
+    "icon": "assets/icons/measureTemperature.svg",
+    "getable": true,
+    "setable": false,
+    "decimals": 1
+    }

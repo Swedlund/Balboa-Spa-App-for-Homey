@@ -1,0 +1,20 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Heating Duration (h)",
+    "sv": "Uppvärmningstid (h)",
+    "da": "Opvarmningstid (t)",
+    "no": "Oppvarmingstid (t)",
+    "fi": "Lämmitysaika (h)",
+    "de": "Heizdauer (h)",
+    "fr": "Durée de chauffage (h)",
+    "es": "Duración del calentamiento (h)",
+    "it": "Durata riscaldamento (h)",
+    "nl": "Verwarmingsduur (u)",
+    "pl": "Czas nagrzewania (h)"
+  },
+  "uiComponent": "sensor",
+  "icon": "assets/icons/clock.svg",
+  "getable": true,
+  "setable": false
+}

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "ip_address",
+    "type": "label",
+    "label": {
+      "en": "IP Address",
+      "nl": "IP-adres",
+      "de": "IP-Adresse",
+      "fr": "Adresse IP",
+      "it": "Indirizzo IP",
+      "sv": "IP-adress",
+      "no": "IP-adresse",
+      "es": "Dirección IP",
+      "da": "IP-adresse"
+    },
+    "value": "0.0.0.0",
+    "hint": {
+      "en": "The IP address of your spa",
+      "nl": "Het IP-adres van uw spa",
+      "de": "Die IP-Adresse Ihres Spas",
+      "fr": "L'adresse IP de votre spa",
+      "it": "L'indirizzo IP della tua spa",
+      "sv": "IP-adressen till ditt spa",
+      "no": "IP-adressen til spaet ditt",
+      "es": "La dirección IP de su spa",
+      "da": "IP-adressen til din spa"
+    }
+  },
+  {
+    "id": "mac_address",
+    "type": "label",
+    "label": {
+      "en": "MAC Address",
+      "nl": "MAC-adres",
+      "de": "MAC-Adresse",
+      "fr": "Adresse MAC",
+      "it": "Indirizzo MAC",
+      "sv": "MAC-adress",
+      "no": "MAC-adresse",
+      "es": "Dirección MAC",
+      "da": "MAC-adresse"
+    },
+    "value": "00:00:00:00:00",
+    "hint": {
+      "en": "The MAC address of your spa.",
+      "nl": "Het MAC-adres van uw spa.",
+      "de": "Die MAC-Adresse Ihres Spas.",
+      "fr": "L'adresse MAC de votre spa.",
+      "it": "L'indirizzo MAC della tua spa.",
+      "sv": "MAC-adressen till ditt spa.",
+      "no": "MAC-adressen til spaet ditt.",
+      "es": "La dirección MAC de su spa.",
+      "da": "MAC-adressen til din spa."
+    }
+  },
+  {
+    "id": "time",
+    "type": "label",
+    "label": {
+      "en": "Time"
+    },
+    "value": " ",
+    "hint": {
+      "en": "The time of your spa."
+    }
+  },
+  {
+    "id": "time_scale",
+    "type": "label",
+    "label": {
+      "en": "Time scale",
+      "nl": "Tijdschaal",
+      "de": "Zeitskala",
+      "fr": "Échelle de temps",
+      "it": "Scala temporale",
+      "sv": "Tidsskala",
+      "no": "Tidsskala",
+      "es": "Escala de tiempo",
+      "da": "Tidsskala"
+    },
+    "value": " ",
+    "hint": {
+      "en": "The time scale of your spa.",
+      "nl": "De tijdschaal van uw spa.",
+      "de": "Die Zeitskala Ihres Spas.",
+      "fr": "L'échelle de temps de votre spa.",
+      "it": "La scala temporale della tua spa.",
+      "sv": "Tidsskalan på ditt spa.",
+      "no": "Tidsskalaen til spaet ditt.",
+      "es": "La escala de tiempo de su spa.",
+      "da": "Tidsskalaen til din spa."
+    }
+  },
+  {
+    "id": "sync_time",
+    "type": "dropdown",
+    "value": "no_sync",
+    "label": {
+      "en": "Sync Time",
+      "nl": "Synchronisatietijd",
+      "de": "Synchronisierungszeit",
+      "fr": "Temps de synchronisation",
+      "it": "Tempo di sincronizzazione",
+      "sv": "Synkronisera tid",
+      "no": "Synkronisera tid",
+      "es": "Tiempo de sincronización",
+      "da": "Synkroniseringstid"
+    },
+    "values": [
+      {
+        "id": "no_sync",
+        "label": {
+          "en": " "
+        }
+      },
+      {
+        "id": "sync",
+        "label": {
+          "en": "Sync now",
+          "nl": "Nu synchroniseren",
+          "de": "Jetzt synchronisieren",
+          "fr": "Synchroniser maintenant",
+          "it": "Sincronizza ora",
+          "sv": "Synkronisera nu",
+          "no": "Synkroniser nå",
+          "es": "Sincronizar ahora",
+          "da": "Synkroniser nu"
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Sensor Visibility",
+      "nl": "Sensorzichtbaarheid",
+      "de": "Sensor Sichtbarkeit",
+      "fr": "Visibilité du capteur",
+      "it": "Visibilità del sensore",
+      "sv": "Sensor synlighet",
+      "no": "Sensor synlighet",
+      "es": "Visibilidad del sensor",
+      "da": "Sensor synlighed"
+    },
+    "children": [
+      {
+        "id": "show_pump_1",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show Pump 1",
+          "nl": "Toon pomp 1",
+          "de": "Pumpe 1 anzeigen",
+          "fr": "Afficher la pompe 1",
+          "it": "Mostra pompa 1",
+          "sv": "Visa pump 1",
+          "no": "Vis pumpe 1",
+          "es": "Mostrar bomba 1",
+          "da": "Vis pumpe 1"
+        }
+      },
+      {
+        "id": "show_pump_2",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Show Pump 2",
+          "nl": "Toon pomp 2",
+          "de": "Pumpe 2 anzeigen",
+          "fr": "Afficher la pompe 2",
+          "it": "Mostra pompa 2",
+          "sv": "Visa pump 2",
+          "no": "Vis pumpe 2",
+          "es": "Mostrar bomba 2",
+          "da": "Vis pumpe 2"
+        }
+      },
+      {
+        "id": "show_pump_3",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Show Pump 3",
+          "nl": "Toon pomp 3",
+          "de": "Pumpe 3 anzeigen",
+          "fr": "Afficher la pompe 3",
+          "it": "Mostra pompa 3",
+          "sv": "Visa pump 3",
+          "no": "Vis pumpe 3",
+          "es": "Mostrar bomba 3",
+          "da": "Vis pumpe 3"
+        }
+      },
+      {
+        "id": "show_pump_4",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Show Pump 4",
+          "nl": "Toon pomp 4",
+          "de": "Pumpe 4 anzeigen",
+          "fr": "Afficher la pompe 4",
+          "it": "Mostra pompa 4",
+          "sv": "Visa pump 4",
+          "no": "Vis pumpe 4",
+          "es": "Mostrar bomba 4",
+          "da": "Vis pumpe 4"
+        }
+      },
+      {
+        "id": "show_pump_5",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Show Pump 5",
+          "nl": "Toon pomp 5",
+          "de": "Pumpe 5 anzeigen",
+          "fr": "Afficher la pompe 5",
+          "it": "Mostra pompa 5",
+          "sv": "Visa pump 5",
+          "no": "Vis pumpe 5",
+          "es": "Mostrar bomba 5",
+          "da": "Vis pumpe 5"
+        }
+      },
+      {
+        "id": "show_pump_6",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Show Pump 6",
+          "nl": "Toon pomp 6",
+          "de": "Pumpe 6 anzeigen",
+          "fr": "Afficher la pompe 6",
+          "it": "Mostra pompa 6",
+          "sv": "Visa pump 6",
+          "no": "Vis pumpe 6",
+          "es": "Mostrar bomba 6",
+          "da": "Vis pumpe 6"
+        }
+      }
+    ]
+  }
+]

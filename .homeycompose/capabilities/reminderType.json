@@ -1,0 +1,102 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Reminder",
+    "sv": "Påminelse",
+    "da": "Påmindelse",
+    "no": "Påminnelse",
+    "fi": "Muistutus",
+    "de": "Erinnerung",
+    "fr": "Rappel",
+    "es": "Recordatorio",
+    "it": "Promemoria",
+    "nl": "Herinnering",
+    "pl": "Przypomnienie"
+  },
+  "values": [
+    {
+      "id": "none",
+      "title": {
+        "en": "None",
+        "sv": "Ingen",
+        "da": "Ingen",
+        "no": "Ingen",
+        "fi": "Ei mitään",
+        "de": "Keine",
+        "fr": "Aucun",
+        "es": "Ninguno",
+        "it": "Nessuno",
+        "nl": "Geen",
+        "pl": "Brak"
+      }
+    },
+    {
+      "id": "clean_filter",
+      "title": {
+        "en": "Clean Filter",
+        "sv": "Rengör filter",
+        "da": "Rens filter",
+        "no": "Rengjør filter",
+        "fi": "Puhdista suodatin",
+        "de": "Filter reinigen",
+        "fr": "Nettoyer le filtre",
+        "es": "Limpiar el filtro",
+        "it": "Pulire il filtro",
+        "nl": "Filter reinigen",
+        "pl": "Wyczyść filtr"
+      }
+    },
+    {
+      "id": "check_the_pH",
+      "title": {
+        "en": "Check pH value",
+        "sv": "Kontrollera pH-värde",
+        "da": "Kontroller pH-værdi",
+        "no": "Sjekk pH-verdi",
+        "fi": "Tarkista pH-arvo",
+        "de": "pH-Wert prüfen",
+        "fr": "Vérifier la valeur du pH",
+        "es": "Verificar valor de pH",
+        "it": "Controlla il valore del pH",
+        "nl": "Controleer pH-waarde",
+        "pl": "Sprawdź wartość pH"
+      }
+    },
+    {
+      "id": "check_the_sanitizer",
+      "title": {
+        "en": "Check Sanitizer",
+        "sv": "Kontrollera desinfektionsmedel",
+        "da": "Kontroller desinfektionsmiddel",
+        "no": "Sjekk desinfeksjonsmiddel",
+        "fi": "Tarkista desinfiointiaine",
+        "de": "Desinfektionsmittel prüfen",
+        "fr": "Vérifier le désinfectant",
+        "es": "Verificar desinfectante",
+        "it": "Controlla il disinfettante",
+        "nl": "Controleer ontsmettingsmiddel",
+        "pl": "Sprawdź środek dezynfekujący"
+      }
+    },
+    {
+      "id": "unknown",
+      "title": {
+        "en": "Unknown",
+        "sv": "Okänd",
+        "da": "Ukendt",
+        "no": "Ukjent",
+        "fi": "Tuntematon",
+        "de": "Unbekannt",
+        "fr": "Inconnu",
+        "es": "Desconocido",
+        "it": "Sconosciuto",
+        "nl": "Onbekend",
+        "pl": "Nieznany"
+      }
+    }
+  ],
+  "uiComponent": "sensor",
+  "icon": "assets/icons/bell.svg",
+  "getable": true,
+  "setable": false
+}

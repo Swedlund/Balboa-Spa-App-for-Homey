@@ -1,0 +1,38 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Target Temperature",
+    "sv": "Måltemperatur",
+    "da": "Måletemperatur",
+    "no": "Måltemperatur",
+    "fi": "Tavoitelämpötila",
+    "de": "Zieltemperatur",
+    "fr": "Température cible",
+    "es": "Temperatura objetivo",
+    "it": "Temperatura target",
+    "nl": "Doeltemperatuur",
+    "pl": "Temperatura docelowa"
+  },
+  "uiComponent": "thermostat",
+  "icon": "assets/icons/targetTemperature.svg",
+  "getable": true,
+  "setable": true,
+  "units": {
+    "en": "°C",
+    "sv": "°C",
+    "da": "°C",
+    "no": "°C",
+    "fi": "°C",
+    "de": "°C",
+    "fr": "°C",
+    "es": "°C",
+    "it": "°C",
+    "nl": "°C",
+    "pl": "°C"
+  },
+  "max": 26,
+  "min": 10,
+  "decimals": 1,
+  "step": 0.5,
+  "insights": true
+}

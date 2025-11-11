@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Temperature Scale"
+  },
+  "uiComponent": null,
+  "icon": "assets/icons/measureTemperature.svg",
+  "getable": true,
+  "setable": false
+}

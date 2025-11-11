@@ -1,0 +1,85 @@
+{
+  "id": "com.balboa.spacontrol",
+  "version": "1.1.0",
+  "brandColor": "#00719c",
+  "compatibility": ">=12.2.0",
+  "sdk": 3,
+  "homeyCommunityTopicId": 133868,
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "ErikSwedlund"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Balboa-Spa"
+  },
+  "description": {
+    "en": "Monitor and control your Balboa-Spa Hottub. Requires the Balboa WiFi module with local connection and no cloud dependency."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Erik Swedlund",
+    "email": "erik.swedlund@outlook.com"
+  },
+  "drivers": [
+    {
+      "id": "balboa_spa",
+      "name": {
+        "en": "Balboa Spa"
+      },
+      "class": "sensor",
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "pair/list_devices.html",
+          "navigation": {
+            "next": "done"
+          }
+        },
+        {
+          "id": "done",
+          "template": "pair/done.html"
+        }
+      ]
+    }
+  ],
+  "api": {
+    "discoverDevices": {
+      "method": "GET",
+      "path": "/discover"
+    },
+    "getLogToTimeline": {
+      "method": "GET",
+      "path": "/settings/logToTimeline"
+    },
+    "setLogToTimeline": {
+      "method": "PUT",
+      "path": "/settings/logToTimeline"
+    }
+  },
+  "settings": [
+    {
+      "type": "label",
+      "id": "balboa-spa-settings",
+      "title": {
+        "en": "Balboa-Spa Settings"
+      },
+      "label": {
+        "en": "Click the button below to discover Balboa-Spa devices."
+      }
+    }
+  ]
+}

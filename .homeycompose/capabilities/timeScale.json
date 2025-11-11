@@ -1,0 +1,20 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Time Scale",
+    "sv": "Tidsformat",
+    "da": "Tidsformat",
+    "no": "Tidsformat",
+    "fi": "Aikamuoto",
+    "de": "Zeitformat",
+    "fr": "Format de l'heure",
+    "es": "Formato de hora",
+    "it": "Formato orario",
+    "nl": "Tijdnotatie",
+    "pl": "Format czasu"
+  },
+  "uiComponent": null,
+  "icon": "assets/icons/timeScale.svg",
+  "getable": true,
+  "setable": false
+}

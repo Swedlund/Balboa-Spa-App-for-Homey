@@ -1,0 +1,70 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Pump 6",
+    "sv": "Pump 6",
+    "da": "Pumpe 6",
+    "no": "Pumpe 6",
+    "fi": "Pumppu 6",
+    "de": "Pumpe 6",
+    "fr": "Pompe 6",
+    "es": "Bomba 6",
+    "it": "Pompa 6",
+    "nl": "Pomp 6",
+    "pl": "Pompa 6"
+  },
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "sv": "Av",
+        "da": "Fra",
+        "no": "Av",
+        "fi": "Pois",
+        "de": "Aus",
+        "fr": "Arrêt",
+        "es": "Apagado",
+        "it": "Spento",
+        "nl": "Uit",
+        "pl": "Wyłączony"
+      }
+    },
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "sv": "Låg",
+        "da": "Lav",
+        "no": "Lav",
+        "fi": "Matala",
+        "de": "Niedrig",
+        "fr": "Bas",
+        "es": "Bajo",
+        "it": "Basso",
+        "nl": "Laag",
+        "pl": "Niski"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "sv": "Hög",
+        "da": "Høj",
+        "no": "Høy",
+        "fi": "Korkea",
+        "de": "Hoch",
+        "fr": "Élevé",
+        "es": "Alto",
+        "it": "Alto",
+        "nl": "Hoog",
+        "pl": "Wysoki"
+      }
+    }
+  ],
+  "uiComponent": null,
+  "icon": "assets/icons/pumpMode.svg",
+  "getable": true,
+  "setable": false
+}

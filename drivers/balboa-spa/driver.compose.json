@@ -1,0 +1,66 @@
+{
+  "name": {
+    "en": "50350 WiFi Module"
+  },
+  "class": "thermostat",
+  "capabilities": [
+    "alarm_connectivity",
+    "alarm_cold",
+    "heatingTime",
+    "heating",
+    "modeHeating",
+    "modeRunning",
+    "modePriming",
+    "circPump",
+    "blower",
+    "modeFilter",
+    "reminderType",
+    "pump1",
+    "pump2",
+    "pump3",
+    "pump4",
+    "pump5",
+    "pump6",
+    "target_temperature_level",
+    "measure_temperature",
+    "target_temperature",
+    "tempRange",
+    "tempScale",
+    "light1",
+    "light2",
+    "tempSensorA",
+    "tempSensorB",
+    "modeStandby",
+    "time",
+    "timeScale"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices",
+      "navigation": {
+        "next": "done"
+      }
+    },
+    {
+      "id": "done",
+      "template": "done"
+    }
+  ]
+}

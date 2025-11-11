@@ -1,0 +1,20 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Standby Mode",
+    "sv": "Standbyläge",
+    "da": "Standbytilstand",
+    "no": "Standbymodus",
+    "fi": "Valmiustila",
+    "de": "Standby-Modus",
+    "fr": "Mode veille",
+    "es": "Modo de espera",
+    "it": "Modalità standby",
+    "nl": "Standby-modus",
+    "pl": "Tryb czuwania"
+  },
+  "uiComponent": null,
+  "icon": "assets/icons/standby.svg",
+  "getable": true,
+  "setable": false
+}

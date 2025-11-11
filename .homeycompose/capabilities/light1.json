@@ -1,0 +1,20 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Light 1",
+    "sv": "Belysning 1",
+    "da": "Belysning 1",
+    "no": "Belysning 1",
+    "fi": "Valaistus 1",
+    "de": "Beleuchtung 1",
+    "fr": "Éclairage 1",
+    "es": "Iluminación 1",
+    "it": "Illuminazione 1",
+    "nl": "Verlichting 1",
+    "pl": "Oświetlenie 1"
+  },
+  "uiComponent": "toggle",
+  "icon": "assets/icons/light.svg",
+  "getable": true,
+  "setable": true
+}

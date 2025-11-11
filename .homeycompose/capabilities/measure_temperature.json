@@ -1,0 +1,35 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Current Temperature",
+    "sv": "Aktuell temperatur",
+    "da": "Aktuel temperatur",
+    "no": "Aktuell temperatur",
+    "fi": "Nykyinen lämpötila",
+    "de": "Aktuelle Temperatur",
+    "fr": "Température actuelle",
+    "es": "Temperatura actual",
+    "it": "Temperatura attuale",
+    "nl": "Huidige temperatuur",
+    "pl": "Aktualna temperatura"
+  },
+  "uiComponent": "thermostat",
+  "icon": "assets/icons/measureTemperature.svg",
+  "units": {
+    "en": "°C",
+    "sv": "°C",
+    "da": "°C",
+    "no": "°C",
+    "fi": "°C",
+    "de": "°C",
+    "fr": "°C",
+    "es": "°C",
+    "it": "°C",
+    "nl": "°C",
+    "pl": "°C"
+  },
+  "getable": true,
+  "setable": false,
+  "decimals": 1,
+  "insights": true
+}

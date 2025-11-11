@@ -1,0 +1,21 @@
+{
+  "id": "alarm_cold",
+  "type": "boolean",
+  "title": {
+    "en": "Freezing Alarm",
+    "nl": "Vorstalarm",
+    "da": "Frostalarm",
+    "it": "Allarme gelo",
+    "ko": "동결 알림",
+    "pl": "Alarm zamrożenia",
+    "ru": "Сигнал замерзания",
+    "sv": "Frostvarning",
+    "es": "Alarma de congelación",
+    "fr": "Alarme de gel",
+    "no": "Frostalarm"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "decimals": 0
+}

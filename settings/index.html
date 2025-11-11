@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="text/javascript"
+      src="/homey.js"
+      data-origin="settings"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header class="homey-header">
+      <nav class="homey-nav">
+        <ul class="homey-nav-list">
+          <li class="homey-nav-item"><a href="index.html">Troubleshooting</a></li>
+          <li class="homey-nav-item"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <h1 class="homey-title">
+        Troubleshooting
+      </h1>
+      <p class="homey-subtitle">
+        Troubleshooting Your Balboa Spa Homey App
+      </p>
+    </header>
+
+    <fieldset class="homey-form-fieldset troubleshooting-box">
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="logToTimeline">Log to timeline</label>
+        <input class="homey-form-input" id="logToTimeline" type="checkbox" />
+      </div>
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="averageHeatingTime">Average heating times:</label>
+        <span id="averageHeatingTime">No measurements available</span>
+      </div>
+      <div class="homey-form-group">
+        <button id="clearHeatingTimes" class="homey-button-primary-full">Clear Average Heating Time</button>
+      </div>
+    </fieldset>
+
+    <script type="text/javascript">
+      function onHomeyReady(Homey) {
+
+        Homey.ready();
+
+        var logToTimelineElement = document.getElementById("logToTimeline");
+        var clearHeatingTimesElement = document.getElementById("clearHeatingTimes");
+        var averageHeatingTimeElement = document.getElementById("averageHeatingTime");
+
+        Homey.get("logToTimeline", function (err, logToTimeline) {
+          if (err) return Homey.alert(err);
+          logToTimelineElement.checked = logToTimeline;
+        });
+
+        Homey.get("heatingTimes", function (err, heatingTimes) {
+          if (err) return Homey.alert(err);
+          if (heatingTimes && heatingTimes.length > 0) {
+            const averageHeatingTime = heatingTimes.reduce((sum, time) => sum + time, 0) / heatingTimes.length;
+            averageHeatingTimeElement.textContent = `${averageHeatingTime.toFixed(2)} hours`;
+          } else {
+            averageHeatingTimeElement.textContent = "No measurements available";
+          }
+        });
+
+        logToTimelineElement.addEventListener("change", function (e) {
+          Homey.set("logToTimeline", logToTimelineElement.checked, function (err) {
+            if (err) return Homey.alert(err);
+          });
+        });
+
+        clearHeatingTimesElement.addEventListener("click", function (e) {
+          Homey.set("heatingTimes", [], function (err) {
+            if (err) return Homey.alert(err);
+            averageHeatingTimeElement.textContent = "No measurements available";
+            alert('Average heating time cleared successfully!');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

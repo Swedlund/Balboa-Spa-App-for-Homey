@@ -1,0 +1,67 @@
+{
+    "type": "enum",
+    "title": {
+      "en": "Temperature level",
+      "nl": "Gewenst temperatuurniveau",
+      "da": "Måltemperaturniveau",
+      "it": "Livello di temperatura target",
+      "ko": "희망 온도 설정",
+      "pl": "Docelowy poziom temperatury",
+      "ru": "Уровень заданной температуры",
+      "sv": "Temperaturnivå",
+      "es": "Nivel de temperatura deseado",
+      "fr": "Niveau de température cible",
+      "no": "Ønsket temperaturnivå"
+    },
+    "desc": {
+      "en": "The target temperature level of the appliance.",
+      "nl": "Het gewenste temperatuurniveau van het apparaat.",
+      "da": "Apparatets måltemperaturniveau.",
+      "it": "Il livello di temperatura target dell'apparecchio.",
+      "ko": "가전의 목표 온도 수준입니다.",
+      "pl": "Docelowy poziom temperatury urządzenia.",
+      "ru": "Уровень заданной температуры прибора.",
+      "sv": "Apparatens önskade temperaturnivå.",
+      "es": "El nivel de temperatura deseado del dispositivo.",
+      "fr": "Le niveau de température cible de l'appareil.",
+      "no": "Ønsket temperaturnivå for apparatet."
+    },
+    "values": [
+      {
+        "id": "low",
+        "title": {
+          "en": "Low",
+          "nl": "Laag",
+          "da": "Lav",
+          "it": "Basso",
+          "ko": "낮음",
+          "pl": "Niski",
+          "ru": "Низкий",
+          "sv": "Låg",
+          "es": "Bajo",
+          "fr": "Faible",
+          "no": "Lavt"
+        }
+      },
+      {
+        "id": "high",
+        "title": {
+          "en": "High",
+          "nl": "Hoog",
+          "da": "Høj",
+          "it": "Alto",
+          "ko": "높음",
+          "pl": "Wysoki",
+          "ru": "Высокий",
+          "sv": "Hög",
+          "es": "Alto",
+          "fr": "Élevé",
+          "no": "Høyt"
+        }
+      }
+    ],
+    "getable": true,
+    "setable": true,
+    "uiComponent": "picker",
+    "icon": "assets/icons/targetTemperature_level.svg"
+  }

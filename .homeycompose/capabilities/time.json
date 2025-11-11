@@ -1,0 +1,20 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Time",
+    "sv": "Tid",
+    "da": "Tid",
+    "no": "Tid",
+    "fi": "Aika",
+    "de": "Zeit",
+    "fr": "Heure",
+    "es": "Hora",
+    "it": "Ora",
+    "nl": "Tijd",
+    "pl": "Czas"
+  },
+  "uiComponent": "sensor",
+  "icon": "assets/icons/clock.svg",
+  "getable": true,
+  "setable": false
+}

@@ -1,0 +1,54 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Temperature Range",
+    "sv": "Temperaturnivå",
+    "da": "Temperaturområde",
+    "no": "Temperaturområde",
+    "fi": "Lämpötila-alue",
+    "de": "Temperaturbereich",
+    "fr": "Plage de température",
+    "es": "Rango de temperatura",
+    "it": "Intervallo di temperatura",
+    "nl": "Temperatuurbereik",
+    "pl": "Zakres temperatury"
+  },
+  "values": [
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "nl": "Laag",
+        "da": "Lav",
+        "it": "Basso",
+        "ko": "낮음",
+        "pl": "Niski",
+        "ru": "Низкий",
+        "sv": "Låg",
+        "es": "Bajo",
+        "fr": "Faible",
+        "no": "Lavt"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "nl": "Hoog",
+        "da": "Høj",
+        "it": "Alto",
+        "ko": "높음",
+        "pl": "Wysoki",
+        "ru": "Высокий",
+        "sv": "Hög",
+        "es": "Alto",
+        "fr": "Élevé",
+        "no": "Høyt"
+      }
+    }
+  ],
+  "uiComponent": null,
+  "icon": "assets/icons/targetTemperature_level.svg",
+  "getable": true,
+  "setable": false
+}

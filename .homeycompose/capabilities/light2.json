@@ -1,0 +1,20 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Light 2",
+    "sv": "Belysning 2",
+    "da": "Belysning 2",
+    "no": "Belysning 2",
+    "fi": "Valaistus 2",
+    "de": "Beleuchtung 2",
+    "fr": "Éclairage 2",
+    "es": "Iluminación 2",
+    "it": "Illuminazione 2",
+    "nl": "Verlichting 2",
+    "pl": "Oświetlenie 2"
+  },
+  "uiComponent": "toggle",
+  "icon": "assets/icons/light.svg",
+  "getable": true,
+  "setable": true
+}

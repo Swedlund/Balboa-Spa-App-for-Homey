@@ -1,0 +1,28 @@
+{
+  "id": "alarm_connectivity",
+  "type": "boolean",
+  "title": {
+    "en": "Connectivity Alarm",
+    "nl": "Verbindingsalarm",
+    "da": "Forbindelsesalarm",
+    "it": "Allarme connettività",
+    "ko": "연결 알림",
+    "pl": "Alarm łączności",
+    "ru": "Сигнал связи",
+    "sv": "Anslutningslarm",
+    "es": "Alarma de conexión",
+    "fr": "Alarme de connectivité",
+    "no": "Tilkoblingsalarm"
+  },
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "Connecton to Spa went down!"
+  },
+  "insightsTitleFalse": {
+    "en": "Connecton to Spa is up!"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "decimals": 0
+}

@@ -1,0 +1,35 @@
+{
+  "1.0.0": {
+    "en": "Initial release with basic functionality to monitor and control the spa bath."
+  },
+  "1.0.1": {
+    "en": "Updated device images to accurately showcase the actual devices compatible with the app."
+  },
+  "1.0.2": {
+    "en": "Added capabilities for connection alerts to notify the user if the connection is lost, and freeze warnings to help avoid low temperature risks. And other minor changes."
+  },
+  "1.0.3": {
+    "en": "The code was updated to enhance the \"Connectivity Alarm\" and \"Freezing Alarm\" for better accuracy. A new function was added to measure heating time, starting when the temperature range changes to high and stopping when the set temperature is reached."
+  },
+  "1.0.4": {
+    "en": "Fixed an issue that caused the application to crash when the remote party (Balboa Spa) unexpectedly closed the socket. This fix provides a more stable and reliable connection."
+  },
+  "1.0.5": {
+    "en": "App settings updated to include the ability to enable log to timeline"
+  },
+  "1.0.7": {
+    "en": "Added safe, throttled timeline logging and improved reconnect logic to prevent app crashes due to rate limits and excessive retries."
+  },
+  "1.0.8": {
+    "en": "Bug fix for Avarage Heating Time causing the app to "
+  },
+  "1.0.9": {
+    "en": "Improved reliability of your spa connection — fewer dropouts, smarter reconnects, and better performance over time."
+  },
+  "1.0.10": {
+    "en": "Improved connection stability and error handling for the Balboa Spa WiFi module integration."
+  },
+  "1.1.0": {
+    "en": "Added support for adjusting the heater mode between \"Ready\" and \"Rest\", enabling and disabling the blower, and expanded language support"
+  }
+}

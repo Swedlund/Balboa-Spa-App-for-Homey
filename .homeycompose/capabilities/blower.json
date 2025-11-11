@@ -1,0 +1,10 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Blower"
+  },
+  "uiComponent": "toggle",
+  "icon": "assets/icons/blower.svg",
+  "getable": true,
+  "setable": true
+}
