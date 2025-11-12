@@ -39,4 +39,4 @@ This app uses the undocumented WebSocket protocol used by the Balboa 50350 modul
 
 Feel free to contribute, report issues, or suggest improvements!
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?style=for-the-badge&logo=buymeacoffee)](https://buymeacoffee.com/SwedlundApp)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?style=for-the-badge&logo=buymeacoffee)](https://buymeacoffee.com/Swedlund)
