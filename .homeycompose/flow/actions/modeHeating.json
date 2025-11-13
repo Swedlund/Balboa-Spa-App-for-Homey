@@ -1,0 +1,24 @@
+{
+  "title": {
+    "en": "Set heater mode to..."
+  },
+  "titleFormatted": { "en": "Set heater mode to [[mode]]" },
+  "hint": {
+    "en": "Select the heater mode. Choose Rest for standby operation or Ready for active heating."
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=balboa-spa"
+    },
+    {
+      "name": "mode",
+      "type": "dropdown",
+      "values": [
+        { "id": "rest", "label": { "en": "Rest" } },
+        { "id": "ready", "label": { "en": "Ready" } }
+      ]
+    }
+  ]
+}

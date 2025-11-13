@@ -1,0 +1,24 @@
+{
+  "title": {
+    "en": "Set temperature level to..."
+  },
+  "titleFormatted": { "en": "Set temperature level to [[level]]" },
+  "hint": {
+    "en": "Choose the desired temperature range. Select Low for cooler range or High for warmer range."
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=balboa-spa"
+    },
+    {
+      "name": "level",
+      "type": "dropdown",
+      "values": [
+        { "id": "low", "label": { "en": "Low" } },
+        { "id": "high", "label": { "en": "High" } }
+      ]
+    }
+  ]
+}

@@ -2,11 +2,13 @@
 
 const Homey = require('homey');
 const { discoverDevices } = require('./integration/deviceDiscovery.js');
+const { registerFlowActions } = require('./flowActions');
 
 class MyDriver extends Homey.Driver {
 
   async onInit() {
     this.log('Balboa-Spa has been initialized');
+    registerFlowActions(this.homey);
   }
 
   async onPairListDevices() {

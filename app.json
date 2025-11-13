@@ -61,6 +61,84 @@
       }
     }
   ],
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Set heater mode to..."
+        },
+        "titleFormatted": {
+          "en": "Set heater mode to [[mode]]"
+        },
+        "hint": {
+          "en": "Select the heater mode. Choose Rest for standby operation or Ready for active heating."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=balboa-spa"
+          },
+          {
+            "name": "mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "rest",
+                "label": {
+                  "en": "Rest"
+                }
+              },
+              {
+                "id": "ready",
+                "label": {
+                  "en": "Ready"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "modeHeating"
+      },
+      {
+        "title": {
+          "en": "Set temperature level to..."
+        },
+        "titleFormatted": {
+          "en": "Set temperature level to [[level]]"
+        },
+        "hint": {
+          "en": "Choose the desired temperature range. Select Low for cooler range or High for warmer range."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=balboa-spa"
+          },
+          {
+            "name": "level",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "low",
+                "label": {
+                  "en": "Low"
+                }
+              },
+              {
+                "id": "high",
+                "label": {
+                  "en": "High"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "target_temperature_level"
+      }
+    ]
+  },
   "drivers": [
     {
       "name": {
